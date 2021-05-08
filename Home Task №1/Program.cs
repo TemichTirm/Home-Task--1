@@ -12,7 +12,7 @@ namespace Home_Task__1
             int endId = 13;
 
             var postsList = await Posts.GetPosts(startId, endId);
-            FileHandler.WriteToFile(postsList);
+            await FileHandler.WriteToFile(postsList);
         }              
     }
 }
