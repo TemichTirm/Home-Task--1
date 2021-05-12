@@ -10,11 +10,12 @@ namespace Home_Task__1
     {
         private static readonly string _fileName = "result.txt";
         private static readonly ILogger _logger = LogManager.GetCurrentClassLogger();
+
         /// <summary>
         /// Записывает в текстовый файл result.txt посты из переданного списка
         /// </summary>
         /// <param name="posts">Список постов в виде объектов класса Posts</param>
-        public static async Task WriteToFile(List<Posts> posts)
+        public static async Task WriteToFile(List<Post> posts)
         {
             try
             {
